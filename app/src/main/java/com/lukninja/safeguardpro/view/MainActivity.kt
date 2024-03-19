@@ -1,7 +1,8 @@
-package com.lukninja.safeguardpro
+package com.lukninja.safeguardpro.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.lukninja.safeguardpro.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
