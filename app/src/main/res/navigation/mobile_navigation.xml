@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lukninja.safeguardpro.view.HomeFragment"
+        android:label="SafeGuard Pro"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/funcionariosFragment"
+        android:name="com.lukninja.safeguardpro.view.FuncionariosFragment"
+        android:label="Funcionários"
+        tools:layout="@layout/fragment_funcionarios" />
+
+    <fragment
+        android:id="@+id/episFragment"
+        android:name="com.lukninja.safeguardpro.view.EpisFragment"
+        android:label="EPIs"
+        tools:layout="@layout/fragment_epis" />
 </navigation>
