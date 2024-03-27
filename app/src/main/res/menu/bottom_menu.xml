@@ -16,4 +16,9 @@
         android:icon="@drawable/epi"
         android:title="EPIs" />
 
+    <item
+        android:id="@+id/entregaFragment"
+        android:icon="@drawable/ic_entrega"
+        android:title="Entrega" />
+
 </menu>

@@ -22,4 +22,10 @@
         android:name="com.lukninja.safeguardpro.view.EpisFragment"
         android:label="EPIs"
         tools:layout="@layout/fragment_epis" />
+
+    <fragment
+        android:id="@+id/entregaFragment"
+        android:name="com.lukninja.safeguardpro.view.EntregaFragment"
+        android:label="fragment_entrega"
+        tools:layout="@layout/fragment_entrega" />
 </navigation>
