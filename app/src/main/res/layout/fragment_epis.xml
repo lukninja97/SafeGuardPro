@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.EpisFragment">
 
     <TextView
@@ -11,5 +12,24 @@
         android:text="EPIs"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        app:boxCornerRadiusBottomEnd="50dp"-->
+<!--        app:boxCornerRadiusBottomStart="50dp"-->
+<!--        app:boxCornerRadiusTopStart="50dp"-->
+<!--        app:boxCornerRadiusTopEnd="50dp"-->
+<!--        android:hint="Nome">-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:inputType="numberPassword"-->
+<!--            />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
