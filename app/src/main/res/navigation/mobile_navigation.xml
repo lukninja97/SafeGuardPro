@@ -28,4 +28,32 @@
         android:name="com.lukninja.safeguardpro.view.EntregaFragment"
         android:label="Entregas"
         tools:layout="@layout/fragment_entrega" />
+
+    <fragment
+        android:id="@+id/funcionarioFragment"
+        android:name="com.lukninja.safeguardpro.view.FuncionarioFragment"
+        android:label="fragment_funcionario"
+        tools:layout="@layout/fragment_funcionario" />
+
+    <fragment
+        android:id="@+id/funcionarioDetailFragment"
+        android:name="com.lukninja.safeguardpro.view.FuncionarioDetailFragment"
+        android:label="fragment_funcionario_detail"
+        tools:layout="@layout/fragment_funcionario_detail" />
+    <fragment
+        android:id="@+id/epiFragment"
+        android:name="com.lukninja.safeguardpro.view.EpiFragment"
+        android:label="fragment_epi"
+        tools:layout="@layout/fragment_epi" />
+    <fragment
+        android:id="@+id/epiDetailFragment"
+        android:name="com.lukninja.safeguardpro.view.EpiDetailFragment"
+        android:label="fragment_epi_detail"
+        tools:layout="@layout/fragment_epi_detail" />
+    <fragment
+        android:id="@+id/homeSupervisorFragment"
+        android:name="com.lukninja.safeguardpro.view.HomeSupervisorFragment"
+        android:label="fragment_home_supervisor"
+        tools:layout="@layout/fragment_home_supervisor" />
+
 </navigation>
