@@ -34,7 +34,7 @@ class FuncionariosFragment : Fragment() {
         //Quando clicar em algum item da lista
         adapter = FuncionarioAdapter(viewModel.funcionarioList.value) { funcionario ->
             val pessoaBundle = Bundle()
-            pessoaBundle.putInt("pessoaId", funcionario.id)
+            pessoaBundle.putInt("funcionarioId", funcionario.id)
             arguments = pessoaBundle
             findNavController().navigate(R.id.funcionarioDetailFragment, arguments)
         }
