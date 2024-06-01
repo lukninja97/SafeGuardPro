@@ -6,13 +6,17 @@
 
         <item name="colorAccent">@color/blue</item>
 
-        <item name="colorSurface">@color/blue</item>
-        <item name="colorOnSurface">@color/white</item>
-        <item name="colorOnSurfaceVariant">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnSurfaceVariant">@color/black</item>
+
         <item name="colorSecondaryContainer">@color/blueDark</item>
         <item name="colorOnSecondaryContainer">@color/blueLight</item>
 
         <item name="colorSurfaceContainer">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:iconTint">@color/white</item>
 
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorOnSecondary">@color/white</item>
@@ -20,11 +24,18 @@
         <item name="colorOnBackground">@color/black</item>
 
         <item name="android:statusBarColor">@color/blueDark</item>
+
+        <item name="editTextStyle">@style/editText</item>
     </style>
 
     <style name="toolbar" parent="Widget.Material3.Toolbar.Surface">
         <item name="colorOnSurface">@color/white</item>
         <item name="colorOnSurfaceVariant">@color/white</item>
+    </style>
+
+    <style name="editText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="colorOnSurfaceVariant">@color/black</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="Theme.SafeGuardPro" parent="Base.Theme.SafeGuardPro" />
