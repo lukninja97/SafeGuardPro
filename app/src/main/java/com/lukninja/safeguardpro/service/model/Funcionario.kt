@@ -7,5 +7,4 @@ data class Funcionario(
     var email: String = "",
     var cargo:String = "",
     var admin: Boolean = false,
-    var ct: Int = 0,
 )
