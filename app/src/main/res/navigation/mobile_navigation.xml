@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeSupervisorFragment"
+        android:name="com.lukninja.safeguardpro.view.HomeSupervisorFragment"
+        android:label="SafeGuard Pro Admin"
+        tools:layout="@layout/fragment_home_supervisor" />
 
     <fragment
         android:id="@+id/homeFragment"
@@ -32,28 +38,37 @@
     <fragment
         android:id="@+id/funcionarioFragment"
         android:name="com.lukninja.safeguardpro.view.FuncionarioFragment"
-        android:label="fragment_funcionario"
+        android:label="Funcionário"
         tools:layout="@layout/fragment_funcionario" />
 
     <fragment
         android:id="@+id/funcionarioDetailFragment"
         android:name="com.lukninja.safeguardpro.view.FuncionarioDetailFragment"
-        android:label="fragment_funcionario_detail"
+        android:label="Funcionario Detalhes"
         tools:layout="@layout/fragment_funcionario_detail" />
+
     <fragment
         android:id="@+id/epiFragment"
         android:name="com.lukninja.safeguardpro.view.EpiFragment"
-        android:label="fragment_epi"
+        android:label="Epi"
         tools:layout="@layout/fragment_epi" />
+
     <fragment
         android:id="@+id/epiDetailFragment"
         android:name="com.lukninja.safeguardpro.view.EpiDetailFragment"
-        android:label="fragment_epi_detail"
+        android:label="Epi Detalhes"
         tools:layout="@layout/fragment_epi_detail" />
+
     <fragment
-        android:id="@+id/homeSupervisorFragment"
-        android:name="com.lukninja.safeguardpro.view.HomeSupervisorFragment"
-        android:label="fragment_home_supervisor"
-        tools:layout="@layout/fragment_home_supervisor" />
+        android:id="@+id/loginFragment"
+        android:name="com.lukninja.safeguardpro.view.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+
+    <fragment
+        android:id="@+id/entregasFragment"
+        android:name="com.lukninja.safeguardpro.view.EntregasFragment"
+        android:label="fragment_entregas"
+        tools:layout="@layout/fragment_entregas" />
 
 </navigation>
