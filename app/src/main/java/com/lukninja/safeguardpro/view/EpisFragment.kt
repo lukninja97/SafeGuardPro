@@ -11,16 +11,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.lukninja.safeguardpro.R
 import com.lukninja.safeguardpro.databinding.FragmentEpisBinding
 import com.lukninja.safeguardpro.view.adapter.EpiAdapter
-import com.lukninja.safeguardpro.view.adapter.FuncionarioAdapter
-import com.lukninja.safeguardpro.viewmodel.EpisViewModel
-import com.lukninja.safeguardpro.viewmodel.FuncionariosViewModel
+import com.lukninja.safeguardpro.viewmodel.EpiViewModel
 
 class EpisFragment : Fragment() {
 
     private var _binding: FragmentEpisBinding? = null
     private val binding: FragmentEpisBinding get() = _binding!!
 
-    private val viewModel: EpisViewModel by viewModels()
+    private val viewModel: EpiViewModel by viewModels()
     private lateinit var adapter: EpiAdapter
 
     override fun onCreateView(

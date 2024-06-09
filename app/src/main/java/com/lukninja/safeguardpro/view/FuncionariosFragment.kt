@@ -11,14 +11,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.lukninja.safeguardpro.R
 import com.lukninja.safeguardpro.databinding.FragmentFuncionariosBinding
 import com.lukninja.safeguardpro.view.adapter.FuncionarioAdapter
-import com.lukninja.safeguardpro.viewmodel.FuncionariosViewModel
+import com.lukninja.safeguardpro.viewmodel.FuncionarioViewModel
 
 class FuncionariosFragment : Fragment() {
 
     private var _binding: FragmentFuncionariosBinding? = null
     private val binding: FragmentFuncionariosBinding get() = _binding!!
 
-    private val viewModel: FuncionariosViewModel by viewModels()
+    private val viewModel: FuncionarioViewModel by viewModels()
     private lateinit var adapter: FuncionarioAdapter
 
     override fun onCreateView(
