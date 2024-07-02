@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group
-        android:id="@+id/supervisor"
         android:checkableBehavior="single">
         <item
             android:id="@+id/homeSupervisorFragment"
@@ -12,8 +11,7 @@
         <item
             android:id="@+id/funcionariosFragment"
             android:icon="@drawable/ic_user"
-            android:title="Funcionários"
-            />
+            android:title="Funcionários" />
 
         <item
             android:id="@+id/episFragment"
@@ -24,20 +22,6 @@
             android:id="@+id/entregasFragment"
             android:icon="@drawable/ic_entrega"
             android:title="Entregas" />
-    </group>
-
-    <group
-        android:id="@+id/funcionario"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/homeFragment"
-            android:icon="@drawable/ic_home"
-            android:title="Home" />
-
-        <item
-            android:id="@+id/funcionarioFragment"
-            android:icon="@drawable/ic_user"
-            android:title="Funcionário"/>
     </group>
 
 </menu>
