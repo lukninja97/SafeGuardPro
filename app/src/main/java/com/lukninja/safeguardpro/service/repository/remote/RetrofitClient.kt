@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RetrofitClient private constructor() {
     companion object {
         private lateinit var retrofit: Retrofit
-        const val apiKey = ""
+
         private fun getRetrofitInstance(): Retrofit {
             val logging = HttpLoggingInterceptor()
             logging.level = HttpLoggingInterceptor.Level.BODY
@@ -17,7 +17,7 @@ class RetrofitClient private constructor() {
 
             if (!::retrofit.isInitialized) {
                 retrofit = Retrofit.Builder()
-                    .baseUrl("https://api-com-banco-modelo.vercel.app/")
+                    .baseUrl("https://safeguard-lucianoas-projects.vercel.app/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient)
                     .build()
