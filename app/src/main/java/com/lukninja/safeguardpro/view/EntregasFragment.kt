@@ -40,7 +40,7 @@ class EntregasFragment : Fragment() {
             val pessoaBundle = Bundle()
             pessoaBundle.putInt("epiId", epi.id)
             arguments = pessoaBundle
-            findNavController().navigate(R.id.epiDetailFragment, arguments)
+//            findNavController().navigate(R.id.epiDetailFragment, arguments)
         }
 
         // Configura a recycler
@@ -54,10 +54,10 @@ class EntregasFragment : Fragment() {
         }
 
         binding.btnAdd.setOnClickListener {
-            findNavController().navigate(R.id.epiFragment)
+            findNavController().navigate(R.id.entregaFragment)
         }
 
         //Carrega os epis e popula a lista
-        viewModel.load()
+//        viewModel.load()
     }
 }

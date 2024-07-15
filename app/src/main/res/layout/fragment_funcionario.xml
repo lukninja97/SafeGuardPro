@@ -20,7 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Nome"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -36,7 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Nome"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -52,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Nome"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="@color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -69,26 +72,19 @@
             android:layout_height="match_parent"
             android:hint="Nome"
             android:inputType="text"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"/>
+            style="@style/editText"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
+        android:id="@+id/chkSupervisor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Supervisor"
         android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:buttonTint="@color/black"/>
-
-    <com.google.android.material.checkbox.MaterialCheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Supervisor"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:buttonTint="@color/black" />
+        android:layout_gravity="center" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="8dp"

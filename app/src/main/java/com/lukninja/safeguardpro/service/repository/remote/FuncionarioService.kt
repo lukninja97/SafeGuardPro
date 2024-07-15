@@ -22,22 +22,22 @@ interface FuncionarioService {
     @Multipart
     @POST("add_funcionario")
     suspend fun createFuncionario(
+        @Part("adm") admin: RequestBody,
         @Part("nome") nome: RequestBody,
-        @Part("cpf") cpf: RequestBody,
-        @Part("email") email: RequestBody,
+        @Part("sobrenome") sobrenome: RequestBody,
+        @Part("ctps") ctps: RequestBody,
         @Part("cargo") cargo: RequestBody,
-        @Part("admin") admin: RequestBody,
     ): Response<Funcionario>
 
     @Multipart
     @PUT("update_funcionario/{funcionario_id}")
     suspend fun updateFuncionario(
         @Path("funcionario_id") funcionarioId: Int,
+        @Part("adm") admin: RequestBody,
         @Part("nome") nome: RequestBody,
-        @Part("cpf") cpf: RequestBody,
-        @Part("email") email: RequestBody,
+        @Part("sobrenome") sobrenome: RequestBody,
+        @Part("ctps") ctps: RequestBody,
         @Part("cargo") cargo: RequestBody,
-        @Part("admin") admin: RequestBody,
     ): Response<Funcionario>
 
     @DELETE("delete_funcionario/{funcionario_id}")

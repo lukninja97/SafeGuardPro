@@ -55,6 +55,6 @@ class EpisFragment : Fragment() {
         }
 
         //Carrega os epis e popula a lista
-        viewModel.load()
+//        viewModel.load()
     }
 }

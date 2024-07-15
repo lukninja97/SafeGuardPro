@@ -10,15 +10,15 @@ import okhttp3.RequestBody.Companion.toRequestBody
 class FuncionarioRepository(context: Context) {
     private val mRemote = RetrofitClient.createService(FuncionarioService::class.java)
 
-    private val funcionarioEmpty = Funcionario(0, "", "", "", "", false)
+    private val funcionarioEmpty = Funcionario(0, false, "", "", 0, "", "")
 
     suspend fun insertFuncionario(funcionario: Funcionario): Funcionario {
         return mRemote.createFuncionario(
+            admin = funcionario.adm.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
             nome = funcionario.nome.toRequestBody("text/plain".toMediaTypeOrNull()),
-            cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull()),
-            email = funcionario.email.toRequestBody("text/plain".toMediaTypeOrNull()),
+            sobrenome = funcionario.sobrenome.toRequestBody("text/plain".toMediaTypeOrNull()),
+            ctps = funcionario.ctps.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
             cargo = funcionario.cargo.toRequestBody("text/plain".toMediaTypeOrNull()),
-            admin = funcionario.admin.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
         ).body() ?: funcionarioEmpty
     }
 
@@ -37,11 +37,11 @@ class FuncionarioRepository(context: Context) {
 
     suspend fun updateFuncionario(id: Int, funcionario: Funcionario): Funcionario {
         return mRemote.updateFuncionario(
+            admin = funcionario.adm.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
             nome = funcionario.nome.toRequestBody("text/plain".toMediaTypeOrNull()),
-            cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull()),
-            email = funcionario.email.toRequestBody("text/plain".toMediaTypeOrNull()),
+            sobrenome = funcionario.sobrenome.toRequestBody("text/plain".toMediaTypeOrNull()),
+            ctps = funcionario.ctps.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
             cargo = funcionario.cargo.toRequestBody("text/plain".toMediaTypeOrNull()),
-            admin = funcionario.admin.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
             funcionarioId = id
         ).body() ?: funcionarioEmpty
     }
